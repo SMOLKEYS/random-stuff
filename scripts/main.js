@@ -1,11 +1,12 @@
 //vanilla modifications
-require("vanillaModifs/bullets/modifBullets");
-require("vanillaModifs/core/vanillaModifs");
+require("vanillaModifs/modifBullets");
+require("vanillaModifs/vanillaModifs");
 
-//username triggered scripts
+/*
 require("NTD/nya");
 require("NTD/boris");
 require("NTD/nemesis");
+*/
 
 //sus
 require("sus/susEffects");
