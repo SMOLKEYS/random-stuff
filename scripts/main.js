@@ -1,0 +1,1 @@
+require("bullets/velaSpawnerBullet");
