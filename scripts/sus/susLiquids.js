@@ -1,10 +1,7 @@
 //kill me
-const sus = require("sus/susEffects");
-
 const whiteLiquid = extend(Liquid, {
   viscosity: 0.7,
   color: Color.valueOf("ffffff"),
-  effect: sus.dubious
 });
 
 module.exports = {
