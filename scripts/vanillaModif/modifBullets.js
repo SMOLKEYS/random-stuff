@@ -12,5 +12,3 @@ const velaBullet = extend(ArtilleryBulletType, {
 module.exports = {
   velaBullet: velaBullet
 };
-
-Log.info("RandomStuffs: Bullets inited");

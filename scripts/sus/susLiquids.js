@@ -7,5 +7,3 @@ const whiteLiquid = extend(Liquid, {
 module.exports = {
   whiteLiquid: whiteLiquid
 };
-
-Log.info("RandomStuffs: Sus liquids inited");
