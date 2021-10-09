@@ -1,4 +1,4 @@
 //vanilla modifications
 require("sus/susLiquids");
-require("vanillaModifs/modifBullets");
-require("vanillaModifs/vanillaModifs");
+require("vanillaModif/modifBullets");
+require("vanillaModif/vanillaModifs");
