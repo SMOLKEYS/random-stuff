@@ -1,13 +1,14 @@
 const velaBullet = extend(ArtilleryBulletType, {
   despawned(b){
     UnitTypes.vela.spawn(b.team, b.x, b.y);
-    Log.info(b.x);
-    Log.info(b.y);
+    Puddles.deposit(Vars.world.tileWorld(b.x, b.y), Liquids.cryofluid, 100); //the sus
   },
   damage: 0, //compensation: this is a ripple bullet
   backColor: Color.valueOf("ffffff")
 });
 
-Blocks.ripple.ammoTypes.put(Items.metaglass, velaBullet);
+module.exports = {
+  velaBullet: velaBullet
+};
 
-Log.info("vela bullet inited");
+Log.info("RandomStuffs: Bullets inited");
