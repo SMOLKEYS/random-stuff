@@ -1,5 +1,5 @@
 //kill me
-const sus = require("susEffects")
+const sus = require("sus/susEffects");
 
 const whiteLiquid = extend(Liquid, {
   viscosity: 0.7,
