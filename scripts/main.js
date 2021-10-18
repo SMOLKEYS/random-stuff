@@ -10,7 +10,7 @@ Events.on(ClientLoadEvent, e => {
     "go away",
     "perhape",
     () => {
-      Core.app.exit();
+      Threads.throwAppException(new Throwable("Deleted most recent custom game save and most recent campaign save."))
     },
     () => {
       print("the j");
