@@ -5,10 +5,10 @@ require("vanillaModif/vanillaModifs");
 //lmao
 Events.on(ClientLoadEvent, e => {
   Vars.ui.showCustomConfirm(
-    fear me,
-    UNLIMITED POWER,
-    go away,
-    perhape,
+    "fear me",
+    "UNLIMITED POWER",
+    "go away",
+    "perhape",
     () => {
       Core.app.exit();
     },
