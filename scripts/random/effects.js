@@ -5,8 +5,8 @@ const ohdear = extend(StatusEffect, {
 });
 */
 
-const onlySeiSimp = extend(StatusEffect, {
+const onlySeiSimp = extend(StatusEffect, "onlySeiSimp", {
   damage: 1,
-  speedMultiplier: 0.5
+  speedMultiplier: 0.5,
+  permanent: true
 });
-//will be exported for further use
