@@ -1,6 +1,6 @@
-//vanilla modifications
 require("vanillaModif/modifBullets");
 require("vanillaModif/vanillaModifs");
+require("random/effects");
 
 //lmao
 Events.on(ClientLoadEvent, e => {
