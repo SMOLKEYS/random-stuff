@@ -20,13 +20,9 @@ const ntsh = () => Vars.ui.showCustomConfirm(
   "???",
   "Leave",
   () => {
-    if(c == 20) {
-      Vars.ui.showErrorMessage("[red]Get out.");
-    } else {
-      ntsh();
-      let descArrayOut = descArray[Mathf.floor(Mathf.random() * descArray.length)];
-      c = c + 1;
-    }
+    ntsh();
+    let descArrayOut = descArray[Mathf.floor(Mathf.random() * descArray.length)];
+    c = c + 1;
   },
   () => {
     print("nothing...");
