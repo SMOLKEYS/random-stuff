@@ -4,23 +4,34 @@ require("random/effects");
 
 let c = 0;
 
+const descArray = [
+  "Hmm?",
+  "Go away!",
+  "Stop it!",
+  "*anger*"
+];
+
+let descArrayOut = () => descArray[Mathf.floor(Mathf.random() * descArray.length)];
+
+
 const ntsh = () => Vars.ui.showCustomConfirm(
   "Nothing.",
-  "Nothing.",
+  descArrayOut(),
   "???",
   "Leave",
   () => {
-    if(c == 11) {
-      Vars.ui.showErrorMessage("[red]Get out.")
+    if(c == 20) {
+      Vars.ui.showErrorMessage("[red]Get out.");
     } else {
       ntsh();
+      let descArrayOut = descArray[Mathf.floor(Mathf.random() * descArray.length)];
       c = c + 1;
     }
   },
   () => {
-    print("nothing...")
+    print("nothing...");
   }
-  )
+)
 
 //lmao
 Events.on(ClientLoadEvent, e => {
