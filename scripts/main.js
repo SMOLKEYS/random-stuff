@@ -14,7 +14,7 @@ const ntsh = () => Vars.ui.showCustomConfirm(
       Vars.ui.showErrorMessage("[red]Get out.")
     } else {
       ntsh();
-      let c = c + 1;
+      c = c + 1;
     }
   },
   () => {
