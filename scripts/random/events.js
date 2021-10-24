@@ -14,7 +14,8 @@ const imageArray = [
   "error",
   "copper",
   "oct",
-  "scepter"
+  "scepter",
+  "/scenes/unforseenScenes/unforseenScene1"
 ];
 
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
