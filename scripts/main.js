@@ -40,9 +40,9 @@ Events.on(ClientLoadEvent, e => {
     "perhape",
     () => {
       ntsh();
-      let c = c + 1;
     },
     () => {
+      print("h");
     }
   );
 });
