@@ -8,14 +8,16 @@ const descArray = [
   "Hmm?",
   "Go away!",
   "Stop it!",
-  "*anger*"
+  "*anger*",
+  "How many times are you gonna tease me!?",
+  "Stop teasing me!",
 ];
 
 let descArrayOut = () => descArray[Mathf.floor(Mathf.random() * descArray.length)];
 
 
 const ntsh = () => Vars.ui.showCustomConfirm(
-  "Nothing.",
+  "Someone:",
   descArrayOut(),
   "???",
   "Leave",
