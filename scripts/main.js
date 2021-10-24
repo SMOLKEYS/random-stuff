@@ -43,10 +43,6 @@ Events.on(ClientLoadEvent, e => {
       let c = c + 1;
     },
     () => {
-      let test = new BaseDialog("test");
-      test.cont.image(Core.atlas.find("random-stuff-cornflaek"));
-      test.addCloseButton();
-      test.show();
     }
   );
 });

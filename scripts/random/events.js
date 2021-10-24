@@ -10,12 +10,12 @@ const textArray = [
 ];
 
 const imageArray = [
-  "antumbra",
-  "error",
-  "copper",
-  "oct",
-  "scepter",
-  "/scenes/unforseenScenes/unforseenScene1"
+  "cheesyOWO",
+  "thid-rul-tre",
+  "cornflaek",
+  "fighttheMPLA",
+  "routeronadrill",
+  "thlammedzenith"
 ];
 
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
@@ -32,7 +32,7 @@ Vars.ui.showCustomConfirm(
     let rnd = Mathf.floor(Mathf.random() * 3);
     if(rnd == 2){
       let imageDialog = new BaseDialog("Image");
-      imageDialog.cont.image(Core.atlas.find(imageArrayRandomizer()));
+      imageDialog.cont.image(Core.atlas.find("random-stuff-" + imageArrayRandomizer()));
       imageDialog.addCloseButton();
       imageDialog.show();
     } else {
