@@ -44,7 +44,7 @@ Events.on(ClientLoadEvent, e => {
     },
     () => {
       let test = new BaseDialog("test");
-      test.cont.image(Core.atlas.find("/scenes/unforseenScenes/unforseenScene1"));
+      test.cont.image(Core.atlas.find("scenes/unforseenScenes/unforseenScene1"));
       test.addCloseButton();
       test.show();
     }
