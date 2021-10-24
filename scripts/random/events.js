@@ -27,7 +27,7 @@ Vars.ui.showCustomConfirm(
   "Yes",
   "No",
   () => {
-    rnd = Mathf.floor(Mathf.random() * 11);
+    let rnd = Mathf.floor(Mathf.random() * 11);
     if(rnd == 6){
       let imageDialog = new BaseDialog("Image");
       imageDialog.clear();
@@ -45,14 +45,14 @@ Vars.ui.showCustomConfirm(
 };
 
 Events.on(WorldLoadEvent, wle => {
-  rnd2 = Mathf.floor(Mathf.random * 20);
+  let rnd2 = Mathf.floor(Mathf.random * 20);
   if(rnd2 == 15){
     starterEvent()
   }
 });
 
 Events.on(TapEvent, te => {
-  rnd3 = Mathf.floor(Mathf.random() * 60);
+  let rnd3 = Mathf.floor(Mathf.random() * 60);
   if(rnd3 == 34){
     starterEvent()
   }
