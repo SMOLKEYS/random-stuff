@@ -43,11 +43,10 @@ Events.on(ClientLoadEvent, e => {
       let c = c + 1;
     },
     () => {
-      print("the j");
+      let test = new BaseDialog("test");
+      test.cont.image(Core.atlas.get("/scenes/unforseenScenes/unforseenScene1"));
+      test.addCloseButton();
+      test.show();
     }
   );
-  let test = new BaseDialog("test");
-  test.cont.image(Core.atlas.get("/scenes/unforseenScenes/unforseenScene1"));
-  test.addCloseButton();
-  test.show();
 });
