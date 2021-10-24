@@ -12,13 +12,9 @@ const imageArray = [
   "scepter"
 ];
 
-function textArrayRandomizer(){
-  textArray[Mathf.floor(Mathf.random() * textArray.length)];
-};
+const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
 
-function imageArrayRandomizer(){
-  imageArray[Mathf.floor(Mathf.random() * imageArray.length)];
-};
+const imageArrayRandomizer = () => imageArray[Mathf.floor(Mathf.random() * imageArray.length)];
 
 function starterEvent(){
 Vars.ui.showCustomConfirm(
@@ -27,7 +23,7 @@ Vars.ui.showCustomConfirm(
   "Yes",
   "No",
   () => {
-    let rnd = Mathf.floor(Mathf.random() * 11);
+    let rnd = Mathf.floor(Mathf.random() * 9);
     if(rnd == 6){
       let imageDialog = new BaseDialog("Image");
       imageDialog.clear();

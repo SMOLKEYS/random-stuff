@@ -14,9 +14,7 @@ const descArray = [
   "Stop teasing me!",
 ];
 
-function descArrayRandomizer(){
-  descArray[Mathf.floor(Mathf.random() * descArray.length)];
-};
+const descArrayRandomizer = () => descArray[Mathf.floor(Mathf.random() * descArray.length)];
 
 function ntsh(){
   Vars.ui.showCustomConfirm(
