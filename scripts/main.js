@@ -26,8 +26,6 @@ function ntsh(){
   "Leave",
   () => {
     ntsh();
-    descArrayRandomizer()
-    c = c + 1;
   },
   () => {
     print("nothing...");
