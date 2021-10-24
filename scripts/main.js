@@ -1,6 +1,7 @@
 require("vanillaModif/modifBullets");
 require("vanillaModif/vanillaModifs");
 require("random/effects");
+require("random/events");
 
 let c = 0;
 
@@ -13,23 +14,26 @@ const descArray = [
   "Stop teasing me!",
 ];
 
-let descArrayOut = () => descArray[Mathf.floor(Mathf.random() * descArray.length)];
+function descArrayRandomizer(){
+  descArray[Mathf.floor(Mathf.random() * descArray.length)];
+};
 
-
-const ntsh = () => Vars.ui.showCustomConfirm(
+function ntsh(){
+  Vars.ui.showCustomConfirm(
   "Someone:",
-  descArrayOut(),
+  descArrayRandomizer(),
   "???",
   "Leave",
   () => {
     ntsh();
-    let descArrayOut = descArray[Mathf.floor(Mathf.random() * descArray.length)];
+    descArrayRandomizer()
     c = c + 1;
   },
   () => {
     print("nothing...");
   }
 )
+};
 
 //lmao
 Events.on(ClientLoadEvent, e => {
