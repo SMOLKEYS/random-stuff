@@ -23,10 +23,9 @@ Vars.ui.showCustomConfirm(
   "Yes",
   "No",
   () => {
-    let rnd = Mathf.floor(Mathf.random() * 9);
-    if(rnd == 6){
+    let rnd = Mathf.floor(Mathf.random() * 3);
+    if(rnd == 2){
       let imageDialog = new BaseDialog("Image");
-      imageDialog.clear();
       imageDialog.cont.image(Core.atlas.find(imageArrayRandomizer()));
       imageDialog.addCloseButton();
       imageDialog.show();
@@ -48,8 +47,8 @@ Events.on(WorldLoadEvent, wle => {
 });
 
 Events.on(TapEvent, te => {
-  let rnd3 = Mathf.floor(Mathf.random() * 60);
-  if(rnd3 == 34){
+  let rnd3 = Mathf.floor(Mathf.random() * 30);
+  if(rnd3 == 25){
     starterEvent()
   }
 });
