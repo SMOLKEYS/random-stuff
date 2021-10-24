@@ -50,3 +50,10 @@ Events.on(WorldLoadEvent, wle => {
     starterEvent()
   }
 });
+
+Events.on(TapEvent, te => {
+  rnd3 = Mathf.floor(Mathf.random() * 60);
+  if(rnd3 == 34){
+    starterEvent()
+  }
+});
