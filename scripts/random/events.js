@@ -40,8 +40,8 @@ Vars.ui.showCustomConfirm(
 };
 
 Events.on(WorldLoadEvent, wle => {
-  let rnd2 = Mathf.floor(Mathf.random * 20);
-  if(rnd2 == 15){
+  let rnd2 = Mathf.floor(Mathf.random * 5);
+  if(rnd2 == 3){
     starterEvent()
   }
 });
