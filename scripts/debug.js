@@ -33,7 +33,7 @@ Events.on(ClientLoadEvent, h => {
   }, 120, 40, 15);
   createTextButton("minimap/position", "MenuPopup", () => {menuEvents.ntsh()}, 160, 40, 15);
   createTextButton("minimap/position", "SIMP", () => {Groups.unit.each(a => a.apply(Vars.content.getByName(ContentType.status, "random-stuff-onlySeiSimp"), Number.MAX_VALUE))}, 90, 40, 15);
-  createImageButton("minimap/position", Icons.star, () => {
+  createImageButton("minimap/position", Icon.star, () => {
     Threads.throwAppException(new Throwable("star"))
   }, 90, 90, 45);
 });
