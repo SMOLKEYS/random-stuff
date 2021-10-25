@@ -15,7 +15,9 @@ const imageArray = [
   "cornflaek",
   "fighttheMPLA",
   "routeronadrill",
-  "thlammedzenith"
+  "thlammedzenith",
+  "polydepression",
+  "thlammedzenith-englishmajor"
 ];
 
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
