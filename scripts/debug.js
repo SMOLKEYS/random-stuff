@@ -3,7 +3,7 @@ const events = require("random/events");
 const menuEvents = require("main");
 
 function createIngameButton(loc, buttonContent, script, sizeX, sizeY, level){
-  Vars.ui.hudGroup.row();
+  Vars.ui.hudGroup.find(loc).row();
   Vars.ui.hudGroup.find(loc).button(buttonContent, script).size(sizeX, sizeY).padTop(level)
 }
 
