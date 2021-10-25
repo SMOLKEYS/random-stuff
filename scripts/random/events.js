@@ -60,5 +60,7 @@ Events.on(TapEvent, te => {
 });
 
 module.exports = {
-  starterEvent: starterEvent
+  starterEvent: starterEvent,
+  textArrayRandomizer: textArrayRandomizer,
+  imageArrayRandomizer: imageArrayRandomizer
 }

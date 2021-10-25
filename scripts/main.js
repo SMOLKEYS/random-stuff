@@ -47,3 +47,7 @@ Events.on(ClientLoadEvent, e => {
     }
   );
 });
+
+module.exports = {
+  ntsh: ntsh
+}
