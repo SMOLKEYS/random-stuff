@@ -9,7 +9,7 @@ function createIngameButton(loc, buttonContent, script, sizeX, sizeY, level){
 
 //find code more atrocious than this, i'll wait
 Events.on(ClientLoadEvent, h => {
-  createIngameButton("minimap/position", "SHEvent", events.starterEvent(), 120, 40, 300);
+  createIngameButton("minimap/position", "SHEvent", () => {events.starterEvent()}, 120, 40, 300);
   createIngameButton("minimap/position", "SHPopup", () => {
     let rnd = Mathf.floor(Mathf.random() * 3);
     if (rnd == 2) {
