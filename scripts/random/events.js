@@ -58,3 +58,7 @@ Events.on(TapEvent, te => {
     starterEvent()
   }
 });
+
+module.exports = {
+  starterEvent: starterEvent
+}

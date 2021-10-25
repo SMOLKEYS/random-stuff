@@ -2,6 +2,7 @@ require("vanillaModif/modifBullets");
 require("vanillaModif/vanillaModifs");
 require("random/effects");
 require("random/events");
+require("debug");
 
 let c = 0;
 
