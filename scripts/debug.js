@@ -19,7 +19,7 @@ function createImageButton(loc, image, script, sizeX, sizeY, level) {
 
 //find code more atrocious than this, i'll wait
 Events.on(ClientLoadEvent, h => {
-  createTextButton("minimap/position", "SHEvent", () => {events.starterEvent()}, 120, 40, 290);
+  createTextButton("minimap/position", "SHEvent", () => {events.starterEvent()}, 120, 40, 55);
   createTextButton("minimap/position", "SHPopup", () => {
     let rnd = Mathf.floor(Mathf.random() * 3);
     if (rnd == 2) {
