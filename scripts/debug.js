@@ -1,6 +1,6 @@
 const events = require("random/events");
 //please dont paradox
-const menuEvents = require("main ");
+const menuEvents = require("main");
 
 function createIngameButton(loc, buttonContent, script, sizeX, sizeY, padPosition){
   Vars.ui.hudGroup.row();
