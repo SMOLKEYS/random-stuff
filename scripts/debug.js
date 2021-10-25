@@ -1,12 +1,16 @@
 const events = require("random/events");
 //please dont paradox
-const menuEvents = require("main");
+const menuEvents = require("main ");
 
+function createIngameButton(loc, buttonContent, script, sizeX, sizeY, padPosition){
+  Vars.ui.hudGroup.row();
+  Vars.ui.hudGroup.find(loc).button(buttonContent, script).size(sizeX, sizeY).padPosition
+}
+
+//find code more atrocious than this, i'll wait
 Events.on(ClientLoadEvent, h => {
-  Vars.ui.hudGroup.find("minimap/position").row();
-  Vars.ui.hudGroup.find("minimap/position").button("SHEvent", () => {events.starterEvent()}).size(120, 40).padTop(300);
-  Vars.ui.hudGroup.find("minimap/position").row();
-  Vars.ui.hudGroup.find("minimap/position").button("SHPopup", () => {
+  createIngameButton("minimap/position", "SHEvent", events.starterEvent(), 120, 40, padTop(300));
+  createIngameButton("minimap/position", "SHPopup", () => {
     let rnd = Mathf.floor(Mathf.random() * 3);
     if (rnd == 2) {
       let imageDialog = new BaseDialog("Image");
@@ -16,7 +20,6 @@ Events.on(ClientLoadEvent, h => {
     } else {
       Vars.ui.showInfo(events.textArrayRandomizer());
     }
-  }).size(120, 40).padTop(20);
-  Vars.ui.hudGroup.find("minimap/position").row();
-  Vars.ui.hudGroup.find("minimap/position").button("MenuPopup", () => {menuEvents.ntsh()}).size(120, 40).padTop(20);
+  }, 120, 40, padTop(20));
+  createIngameButton("minimap/position", "MenuPopup", () => {menuEvents.ntsh()}, 160, 40, padTop(20))
 });
