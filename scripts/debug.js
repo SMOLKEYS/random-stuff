@@ -22,5 +22,5 @@ Events.on(ClientLoadEvent, h => {
     }
   }, 120, 40, 15);
   createIngameButton("minimap/position", "MenuPopup", () => {menuEvents.ntsh()}, 160, 40, 15);
-  createIngameButton("minimap/position", "SIMP", () => {Groups.unit.each(a => a.apply(Vars.content.getByName(ContentType.effect, "random-stuff-onlySeiSimp"), Number.MAX_VALUE))}, 90, 40, 15);
+  createIngameButton("minimap/position", "SIMP", () => {Groups.unit.each(a => a.apply(Vars.content.getByName(ContentType.status, "random-stuff-onlySeiSimp"), Number.MAX_VALUE))}, 90, 40, 15);
 });
