@@ -6,6 +6,9 @@ const ohdear = extend(StatusEffect, {
 */
 
 const onlySeiSimp = extend(StatusEffect, "onlySeiSimp", {
+  update(unit, time){
+    unit.kill()
+  },
   damage: 1,
   speedMultiplier: 0.5,
   permanent: true
