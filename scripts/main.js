@@ -2,9 +2,8 @@ require("vanillaModif/modifBullets");
 require("vanillaModif/vanillaModifs");
 require("random/effects");
 require("random/events");
-require("debug");
-
-let c = 0;
+require("libs/buttonLib");
+require("ui/ingameButtons");
 
 const descArray = [
   "Hmm?",
