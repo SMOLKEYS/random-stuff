@@ -30,8 +30,6 @@ Events.on(ClientLoadEvent, h => {
   }, 50, 50, 15);
   buttons.createTextButton("minimap/position", "kill", () => {
     let rnd = Mathf.floor(Mathf.random() * 2);
-    if(rnd == 1) {
-      Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
-    }
+    Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
   }, 90, 40, 20)
 });

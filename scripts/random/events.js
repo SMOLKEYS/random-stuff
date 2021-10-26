@@ -41,7 +41,20 @@ const userArray = [
   "ErkDog",
   "GeoTM",
   "Core",
-  "th35leeper"
+  "th35leeper",
+  "Arkine",
+  "Cheesy-Chan",
+  "Dryhem_",
+  "KayAreAre",
+  "sk7725",
+  "BlueWolf",
+  "GlennFolker",
+  "EyeOfDarkness",
+  "Goober/Goobrr",
+  "Xelo",
+  "RandomRA2",
+  "sw",
+  "Anuke",
 ];
 
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
@@ -64,7 +77,10 @@ const deathArray = [
   "by throwing them to the moon using full force!",
   "by shooting them with an AK-47!",
   "by dropping an anvil onto their head!",
-  "by hiring " + userArrayRandomizer3() + " to assasinate them!"
+  "by hiring " + userArrayRandomizer3() + " to assasinate them!",
+  "by throwing them in a pit of crawlers!",
+  "by petrifying them!",
+  "by pushing them off the edge of a building!"
 ];
 
 const deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathArray.length)]
