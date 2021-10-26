@@ -44,15 +44,6 @@ const userArray = [
   "th35leeper"
 ];
 
-const deathArray = [
-  "by grenade!",
-  "by piercing a longsword through their head!",
-  "by throwing 800 daggers onto their chest!",
-  "by deleting them from the face of the planet!",
-  "by throwing them into a portal to hell!",
-  "by throwing them to the moon using full force!"
-]
-
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
 
 const imageArrayRandomizer = () => imageArray[Mathf.floor(Mathf.random() * imageArray.length)];
@@ -60,6 +51,21 @@ const imageArrayRandomizer = () => imageArray[Mathf.floor(Mathf.random() * image
 const userArrayRandomizer1 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
 
 const userArrayRandomizer2 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
+
+const userArrayRandomizer3 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
+
+
+const deathArray = [
+  "by grenade!",
+  "by piercing a longsword through their head!",
+  "by throwing 800 daggers onto their chest!",
+  "by deleting them from the face of the planet!",
+  "by throwing them into a portal to hell!",
+  "by throwing them to the moon using full force!",
+  "by shooting them with an AK-47!",
+  "by dropping an anvil onto their head!",
+  "by hiring " + userArrayRandomizer3() + " to assasinate them!"
+];
 
 const deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathArray.length)]
 
