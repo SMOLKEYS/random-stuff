@@ -33,5 +33,5 @@ Events.on(ClientLoadEvent, h => {
     if(rnd == 1) {
       Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
     }
-  })
+  }, 90, 40, 20)
 });
