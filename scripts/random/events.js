@@ -20,9 +20,49 @@ const imageArray = [
   "thlammedzenith-englishmajor"
 ];
 
+const userArray = [
+  "[ASB] Boris (Boris)",
+  "Sei (Requiem)",
+  "SMOLKEYS",
+  "MissAmity (Cato-1)",
+  "Hard967 (a very blue uncreative person)",
+  "Zebryy",
+  "hortiSquash (horticost the pain handler)",
+  "NemesisTheory",
+  "router (BasedUser)",
+  "Ilya246",
+  "?Unknown? [ckat] (?Unknown?)",
+  "RouterA617 (SniperAG17)",
+  "Quezler",
+  "foo (evil_hacker)",
+  "Gureumi",
+  "iczero",
+  "Tener",
+  "ErkDog",
+  "GeoTM",
+  "Core",
+  "th35leeper"
+];
+
+const deathArray = [
+  "by grenade!",
+  "by piercing a longsword through their head!",
+  "by throwing 800 daggers onto their chest!",
+  "by deleting them from the face of the planet!",
+  "by throwing them into a portal to hell!",
+  "by throwing them to the moon using full force!"
+]
+
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
 
 const imageArrayRandomizer = () => imageArray[Mathf.floor(Mathf.random() * imageArray.length)];
+
+const userArrayRandomizer1 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
+
+const userArrayRandomizer2 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
+
+const deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathArray.length)]
+
 
 function starterEvent(){
 Vars.ui.showCustomConfirm(
@@ -64,5 +104,8 @@ Events.on(TapEvent, te => {
 module.exports = {
   starterEvent: starterEvent,
   textArrayRandomizer: textArrayRandomizer,
-  imageArrayRandomizer: imageArrayRandomizer
+  imageArrayRandomizer: imageArrayRandomizer,
+  userArrayRandomizer1: userArrayRandomizer1,
+  userArrayRandomizer2: userArrayRandomizer2,
+  deathArrayRandomizer: deathArrayRandomizer
 }

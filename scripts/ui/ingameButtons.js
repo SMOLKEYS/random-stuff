@@ -27,5 +27,11 @@ Events.on(ClientLoadEvent, h => {
   }, 90, 40, 15);
   buttons.createImageButton("minimap/position", Icon.hammer, () => {
     Threads.throwAppException(new Throwable("Ilya246 has banned you from the game."))
-  }, 50, 50, 35);
+  }, 50, 50, 15);
+  buttons.createTextButton("minimap/position", "kill", () => {
+    let rnd = Mathf.floor(Mathf.random() * 2);
+    if(rnd == 1) {
+      Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
+    }
+  })
 });
