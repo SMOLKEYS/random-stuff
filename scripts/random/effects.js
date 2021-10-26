@@ -8,7 +8,7 @@ const ohdear = extend(StatusEffect, {
 const onlySeiSimp = extend(StatusEffect, "onlySeiSimp", {
   update(unit, time){
     if(time == 60){
-      unit.health = Mathf.floor(Mathf.random() * 350)
+      unit.health = Mathf.floor(Mathf.random() * unit.maxHealth)
     }
   },
   damage: 1,
