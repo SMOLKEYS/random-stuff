@@ -7,7 +7,7 @@ const ohdear = extend(StatusEffect, {
 
 const onlySeiSimp = extend(StatusEffect, "onlySeiSimp", {
   update(unit, time){
-    unit.health = Mathf.floor(Mathf.random() * unit.health) + 1 //dont go below zero
+    unit.health = Mathf.floor(Mathf.random() * unit.health) + unit.health //dont go below zero
   },
   damage: 1,
   speedMultiplier: 0.5,
