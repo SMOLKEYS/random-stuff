@@ -31,14 +31,19 @@ Events.on(ClientLoadEvent, h => {
   buttons.createTextButton("minimap/position", "kill", () => {
     let rnd = Mathf.floor(Mathf.random() * 2);
     if(rnd == 0) {
+      events.deathArray[Mathf.floor(Mathf.random() * events.deathArray.length)];
       Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
     };
     if(rnd == 1) {
       Vars.ui.showInfo(events.userArrayRandomizer1() + " tries to kill " + events.userArrayRandomizer2() + " but fails.")
     };
     if(rnd == 2) {
-      events.deathArray[Math.floor(Math.random() * events.deathArray.length)];
+      events.accidentArray[Math.floor(Math.random() * events.accidentArray.length)];
       Vars.ui.showInfo(events.userArrayRandomizer1() + " " + events.accidentArrayRandomizer())
     }
-  }, 90, 40, 20)
+  }, 90, 40, 20);
+  buttons.createTextButton("minimap/position", "*dies*", () => {
+     events.accidentArray[Math.floor(Math.random() * events.accidentArray.length)];
+     Vars.ui.showInfo(events.userArrayRandomizer1() + " " + events.accidentArrayRandomizer())
+  }, 90, 40, 15)
 });
