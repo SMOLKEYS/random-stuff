@@ -29,7 +29,7 @@ Events.on(ClientLoadEvent, h => {
     Threads.throwAppException(new Throwable("Ilya246 has banned you from the game."))
   }, 50, 50, 15);
   buttons.createTextButton("minimap/position", "kill", () => {
-    let rnd = Mathf.floor(Mathf.random() * 4);
+    let rnd = Mathf.floor(Mathf.random() * 3);
     if(rnd == 1) {
       Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
     };
