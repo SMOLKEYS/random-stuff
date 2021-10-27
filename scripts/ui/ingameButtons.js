@@ -37,7 +37,7 @@ Events.on(ClientLoadEvent, h => {
       Vars.ui.showInfo(events.userArrayRandomizer1() + " tries to kill " + events.userArrayRandomizer2() + " but fails.")
     };
     if(rnd == 3) {
-      deathArray[Math.floor(Math.random() * deathArray.length)];
+      events.deathArray[Math.floor(Math.random() * events.deathArray.length)];
       Vars.ui.showInfo(events.userArrayRandomizer1() + " " + events.accidentArrayRandomizer())
     }
   }, 90, 40, 20)
