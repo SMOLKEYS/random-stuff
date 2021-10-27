@@ -184,6 +184,7 @@ module.exports = {
   starterEvent: starterEvent,
   textArrayRandomizer: textArrayRandomizer,
   imageArrayRandomizer: imageArrayRandomizer,
+  userArray: userArray,
   userArrayRandomizer1: userArrayRandomizer1,
   userArrayRandomizer2: userArrayRandomizer2,
   userArrayRandomizer3: userArrayRandomizer3,

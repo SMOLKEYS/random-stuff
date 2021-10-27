@@ -43,7 +43,8 @@ Events.on(ClientLoadEvent, h => {
     }
   }, 90, 40, 20);
   buttons.createTextButton("minimap/position", "*dies*", () => {
-     events.accidentArray[Math.floor(Math.random() * events.accidentArray.length)];
-     Vars.ui.showInfo(events.userArrayRandomizer1() + " " + events.accidentArrayRandomizer())
+    events.accidentArray[Math.floor(Math.random() * events.accidentArray.length)];
+    events.userArray[Mathf.floor(Mathf.random() * events.userArray.length)]
+    Vars.ui.showInfo(events.userArrayRandomizer1() + " " + events.accidentArrayRandomizer())
   }, 90, 40, 15)
 });
