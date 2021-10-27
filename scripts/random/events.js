@@ -189,5 +189,6 @@ module.exports = {
   userArrayRandomizer3: userArrayRandomizer3,
   deathArray: deathArray,
   deathArrayRandomizer: deathArrayRandomizer,
+  accidentArray: accidentArray,
   accidentArrayRandomizer: accidentArrayRandomizer
 }
