@@ -64,7 +64,38 @@ const userArray = [
   "Antlrr",
   "Nyaaa",
   "a_random_user",
-  "ElectricGun"
+  "ElectricGun",
+  "Mindustry",
+  "real sushi",
+  "maid oxynoe",
+  "Ciorno",
+  "Neko",
+  "PetrGasparik",
+  "Akari (Brachydios)",
+  "JustYanns",
+  "DaGamerFiles",
+  "RYSPAL",
+  "LauweJoster (Pedaalemmer)",
+  "'quote'",
+  "Darkness (russian name i cant type)",
+  "Slotterleet",
+  "cinn_x (cinn)",
+  "KwikKill",
+  "lexa1549",
+  "Mihawka",
+  "nglam2911",
+  "Pietro",
+  "RexHm",
+  "u84 (U E B U N T U)",
+  "Vanguard",
+  "ZacBytes",
+  "Dexapnow",
+  "RayTheFox",
+  "JrTRinny",
+  "Emanuel G",
+  "Flin",
+  "MrSampleStudent",
+  "Gencoco Nuggies"
 ];
 
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
@@ -90,7 +121,11 @@ const deathArray = [
   "by throwing them in a pit of crawlers!",
   "by petrifying them!",
   "by pushing them off the edge of a building!",
-  "by\n[scarlet]T-Pose\nAssert\nD O M I N A N C E"
+  "by\n[scarlet]T-Pose\nAssert\nD O M I N A N C E",
+  "by sniping them!",
+  "by throwing them into a bottomless pit!",
+  "by hauling 200 punches at them!",
+  "by snapping them out of existence!",
 ];
 
 const accidentArray = [
@@ -100,7 +135,8 @@ const accidentArray = [
   "hits a wall while running. Ouch.",
   "falls off the edge of a cliff.",
   "accidentally steps on a landmine and gets blown to pieces.\nWho owns that landmine anyways?",
-  "nearly gets blown up by an 8-year old PC, attempting to run Minecraft with shaders."
+  "nearly gets blown up by an 8-year old PC, attempting to run Minecraft with shaders.",
+  "loses their balance and falls into a raging river.",
 ];
 
 const deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathArray.length)]
