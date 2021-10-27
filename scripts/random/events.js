@@ -58,7 +58,13 @@ const userArray = [
   "sh1penfire",
   "Slava0135",
   "MEEPOfFaith",
-  "TheMalaysianDude"
+  "TheMalaysianDude",
+  "Eschatologue",
+  "QmelZ",
+  "Antlrr",
+  "Nyaaa",
+  "a_random_user",
+  "ElectricGun"
 ];
 
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
