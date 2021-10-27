@@ -32,7 +32,7 @@ Events.on(ClientLoadEvent, h => {
     let rnd = Mathf.floor(Mathf.random() * 2);
     if(rnd == 0) {
       let deathArrayRandomizer = () => events.deathArray[Mathf.floor(Mathf.random() * events.deathArray.length)]
-      Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
+      Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + deathArrayRandomizer())
     };
     if(rnd == 1) {
       Vars.ui.showInfo(events.userArrayRandomizer1() + " tries to kill " + events.userArrayRandomizer2() + " but fails.")
