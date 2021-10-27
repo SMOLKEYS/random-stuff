@@ -98,15 +98,15 @@ const userArray = [
   "Gencoco Nuggies"
 ];
 
-const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
+let textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
 
-const imageArrayRandomizer = () => imageArray[Mathf.floor(Mathf.random() * imageArray.length)];
+let imageArrayRandomizer = () => imageArray[Mathf.floor(Mathf.random() * imageArray.length)];
 
-const userArrayRandomizer1 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
+let userArrayRandomizer1 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
 
-const userArrayRandomizer2 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
+let userArrayRandomizer2 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
 
-const userArrayRandomizer3 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
+let userArrayRandomizer3 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
 
 const deathArray = [
   "by grenade!",
@@ -139,9 +139,9 @@ const accidentArray = [
   "loses their balance and falls into a raging river.",
 ];
 
-const deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathArray.length)]
+let deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathArray.length)]
 
-const accidentArrayRandomizer = () => accidentArray[Mathf.floor(Mathf.random() * accidentArray.length)]
+let accidentArrayRandomizer = () => accidentArray[Mathf.floor(Mathf.random() * accidentArray.length)]
 
 function starterEvent(){
 Vars.ui.showCustomConfirm(

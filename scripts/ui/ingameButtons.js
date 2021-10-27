@@ -31,8 +31,7 @@ Events.on(ClientLoadEvent, h => {
   buttons.createTextButton("minimap/position", "kill", () => {
     let rnd = Mathf.floor(Mathf.random() * 2);
     if(rnd == 0) {
-      events.deathArrayRandomizer();
-      events.deathArray[Mathf.floor(Mathf.random() * events.deathArray.length)];
+      let deathArrayRandomizer = () => events.deathArray[Mathf.floor(Mathf.random() * events.deathArray.length)]
       Vars.ui.showInfo(events.userArrayRandomizer1() + " kills " + events.userArrayRandomizer2() + " " + events.deathArrayRandomizer())
     };
     if(rnd == 1) {
@@ -45,8 +44,7 @@ Events.on(ClientLoadEvent, h => {
     }
   }, 90, 40, 20);
   buttons.createTextButton("minimap/position", "*dies*", () => {
-    events.accidentArrayRandomizer();
-    events.accidentArray[Math.floor(Math.random() * events.accidentArray.length)];
-    Vars.ui.showInfo(events.userArrayRandomizer1() + " " + events.accidentArrayRandomizer())
+    let accidentArrayRandomizer = () => events.accidentArray[Mathf.floor(Mathf.random() * events.accidentArray.length)]
+    Vars.ui.showInfo(events.userArrayRandomizer1() + " " + accidentArrayRandomizer())
   }, 90, 40, 15)
 });
