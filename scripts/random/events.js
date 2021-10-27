@@ -55,6 +55,10 @@ const userArray = [
   "RandomRA2",
   "sw",
   "Anuke",
+  "sh1penfire",
+  "Slava0135",
+  "MEEPOfFaith",
+  "TheMalaysianDude"
 ];
 
 const textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
@@ -66,7 +70,6 @@ const userArrayRandomizer1 = () => userArray[Mathf.floor(Mathf.random() * userAr
 const userArrayRandomizer2 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
 
 const userArrayRandomizer3 = () => userArray[Mathf.floor(Mathf.random() * userArray.length)]
-
 
 const deathArray = [
   "by grenade!",
@@ -80,11 +83,23 @@ const deathArray = [
   "by hiring " + userArrayRandomizer3() + " to assasinate them!",
   "by throwing them in a pit of crawlers!",
   "by petrifying them!",
-  "by pushing them off the edge of a building!"
+  "by pushing them off the edge of a building!",
+  "by\n[scarlet]T-Pose\nAssert\nD O M I N A N C E"
+];
+
+const accidentArray = [
+  "gets hit by a car.",
+  "accidentally falls onto " + userArrayRandomizer2() + ", both getting knocked out for a few minutes until " + userArrayRandomizer3() + " finds them laying on the floor.",
+  "falls into a hole trap, eventually being found by " + userArrayRandomizer2() + " and " + userArrayRandomizer3() + " after 20 minutes.",
+  "hits a wall while running. Ouch.",
+  "falls off the edge of a cliff.",
+  "accidentally steps on a landmine and gets blown to pieces.\nWho owns that landmine anyways?",
+  "nearly gets blown up by an 8-year old PC, attempting to run Minecraft with shaders."
 ];
 
 const deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathArray.length)]
 
+const accidentArrayRandomizer = () => accidentArray[Mathf.floor(Mathf.random() * accidentArray.length)]
 
 function starterEvent(){
 Vars.ui.showCustomConfirm(
@@ -129,5 +144,7 @@ module.exports = {
   imageArrayRandomizer: imageArrayRandomizer,
   userArrayRandomizer1: userArrayRandomizer1,
   userArrayRandomizer2: userArrayRandomizer2,
-  deathArrayRandomizer: deathArrayRandomizer
+  userArrayRandomizer3: userArrayRandomizer3,
+  deathArrayRandomizer: deathArrayRandomizer,
+  accidentArrayRandomizer: accidentArrayRandomizer
 }
