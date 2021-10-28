@@ -95,7 +95,8 @@ const userArray = [
   "Emanuel G",
   "Flin",
   "MrSampleStudent",
-  "Gencoco Nuggies"
+  "Gencoco Nuggies",
+  "mothyyyyy"
 ];
 
 let textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
@@ -126,12 +127,13 @@ const deathArray = [
   "by throwing them into a bottomless pit!",
   "by hauling 200 punches at them!",
   "by snapping them out of existence!",
+  {string}
 ];
 
 const accidentArray = [
   "gets hit by a car.",
-  "accidentally falls onto " + userArrayRandomizer2[Mathf.floor(Mathf.random() * userArray.length)] + ", both getting knocked out for a few minutes until " + userArrayRandomizer3[Mathf.floor(Mathf.random() * userArray.length)] + " finds them laying on the floor.",
-  "falls into a hole trap, eventually being found by " + userArrayRandomizer2[Mathf.floor(Mathf.random() * userArray.length)] + " and " + userArrayRandomizer3[Mathf.floor(Mathf.random() * userArray.length)] + " after 20 minutes.",
+  "accidentally falls onto " + userArrayRandomizer2() + ", both getting knocked out for a few minutes until " + userArrayRandomizer3() + " finds them laying on the floor.",
+  "falls into a hole trap, eventually being found by " + userArrayRandomizer2() + " and " + userArrayRandomizer3() + " after 20 minutes.",
   "hits a wall while running. Ouch.",
   "falls off the edge of a cliff.",
   "accidentally steps on a landmine and gets blown to pieces.\nWho owns that landmine anyways?",

@@ -43,8 +43,4 @@ Events.on(ClientLoadEvent, h => {
       Vars.ui.showInfo(events.userArrayRandomizer1() + " " + events.accidentArrayRandomizer())
     }
   }, 90, 40, 20);
-  buttons.createTextButton("minimap/position", "*dies*", () => {
-    let accidentArrayRandomizer = () => events.accidentArray[Mathf.floor(Mathf.random() * events.accidentArray.length)]
-    Vars.ui.showInfo(events.userArrayRandomizer1() + " " + accidentArrayRandomizer())
-  }, 90, 40, 15)
 });
