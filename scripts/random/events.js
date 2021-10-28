@@ -126,8 +126,7 @@ const deathArray = [
   "by sniping them!",
   "by throwing them into a bottomless pit!",
   "by hauling 200 punches at them!",
-  "by snapping them out of existence!",
-  {string}
+  "by snapping them out of existence!"
 ];
 
 const accidentArray = [
