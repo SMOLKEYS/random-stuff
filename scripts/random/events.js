@@ -17,7 +17,14 @@ const imageArray = [
   "routeronadrill",
   "thlammedzenith",
   "polydepression",
-  "thlammedzenith-englishmajor"
+  "thlammedzenith-englishmajor",
+  "godtumbra",
+  "manmace",
+  "smolopid",
+  "banishment",
+  "mokeymurder",
+  "wilburscream",
+  "yellow3d"
 ];
 
 const userArray = [
