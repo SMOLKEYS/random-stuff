@@ -104,7 +104,8 @@ const userArray = [
   "MrSampleStudent",
   "Gencoco Nuggies",
   "mothyyyyy",
-  "Napstaparrot"
+  "Napstaparrot",
+  "Vaporeon"
 ];
 
 let textArrayRandomizer = () => textArray[Mathf.floor(Mathf.random() * textArray.length)];
