@@ -16,19 +16,26 @@ const descArray = [
 
 const descArrayRandomizer = () => descArray[Mathf.floor(Mathf.random() * descArray.length)];
 
+let num = () => Mathf.floor(Mathf.random() * 10);
+
 function ntsh(){
-  Vars.ui.showCustomConfirm(
-  "Someone:",
-  descArrayRandomizer(),
-  "???",
-  "Leave",
-  () => {
-    ntsh();
+  num();
+  if(num() == 5){
+    Vars.ui.showErrorMessage("Unexpected end of string");
+  } else {
+    Vars.ui.showCustomConfirm(
+    "Someone:",
+    descArrayRandomizer(),
+    "???",
+    "Leave",
+    () => {
+      ntsh();
   },
   () => {
-    print("nothing...");
-  }
-)
+      print("nothing...");
+    }
+  )
+}
 };
 
 //lmao
