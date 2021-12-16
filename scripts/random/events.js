@@ -153,53 +153,53 @@ let deathArrayRandomizer = () => deathArray[Mathf.floor(Mathf.random() * deathAr
 
 let accidentArrayRandomizer = () => accidentArray[Mathf.floor(Mathf.random() * accidentArray.length)]
 
-function starterEvent(){
-Vars.ui.showCustomConfirm(
-  "Something happened.",
-  "Would you like to see what it is?",
-  "Yes",
-  "No",
-  () => {
-    let rnd = Mathf.floor(Mathf.random() * 3);
-    if(rnd == 2){
-      let imageDialog = new BaseDialog("Image");
-      imageDialog.cont.image(Core.atlas.find("random-stuff-" + imageArrayRandomizer()));
-      imageDialog.addCloseButton();
-      imageDialog.show();
-    } else {
-      Vars.ui.showInfo(textArrayRandomizer());
-    }
-  },
-  () => {
-    print("No");
-  }
-);
+function starterEvent() {
+    Vars.ui.showCustomConfirm(
+        "Something happened.",
+        "Would you like to see what it is?",
+        "Yes",
+        "No",
+        () => {
+            let rnd = Mathf.floor(Mathf.random() * 3);
+            if (rnd == 2) {
+                let imageDialog = new BaseDialog("Image");
+                imageDialog.cont.image(Core.atlas.find("random-stuff-" + imageArrayRandomizer()));
+                imageDialog.addCloseButton();
+                imageDialog.show();
+            } else {
+                Vars.ui.showInfo(textArrayRandomizer());
+            }
+        },
+        () => {
+            print("No");
+        }
+    );
 };
 
 Events.on(WorldLoadEvent, wle => {
-  let rnd2 = Mathf.floor(Mathf.random * 5);
-  if(rnd2 == 3){
-    starterEvent()
-  }
+    let rnd2 = Mathf.floor(Mathf.random * 5);
+    if (rnd2 == 3) {
+        starterEvent()
+    }
 });
 
 Events.on(TapEvent, te => {
-  let rnd3 = Mathf.floor(Mathf.random() * 30);
-  if(rnd3 == 25){
-    starterEvent()
-  }
+    let rnd3 = Mathf.floor(Mathf.random() * 30);
+    if (rnd3 == 25) {
+        starterEvent()
+    }
 });
 
 module.exports = {
-  starterEvent: starterEvent,
-  textArrayRandomizer: textArrayRandomizer,
-  imageArrayRandomizer: imageArrayRandomizer,
-  userArray: userArray,
-  userArrayRandomizer1: userArrayRandomizer1,
-  userArrayRandomizer2: userArrayRandomizer2,
-  userArrayRandomizer3: userArrayRandomizer3,
-  deathArray: deathArray,
-  deathArrayRandomizer: deathArrayRandomizer,
-  accidentArray: accidentArray,
-  accidentArrayRandomizer: accidentArrayRandomizer
+    starterEvent: starterEvent,
+    textArrayRandomizer: textArrayRandomizer,
+    imageArrayRandomizer: imageArrayRandomizer,
+    userArray: userArray,
+    userArrayRandomizer1: userArrayRandomizer1,
+    userArrayRandomizer2: userArrayRandomizer2,
+    userArrayRandomizer3: userArrayRandomizer3,
+    deathArray: deathArray,
+    deathArrayRandomizer: deathArrayRandomizer,
+    accidentArray: accidentArray,
+    accidentArrayRandomizer: accidentArrayRandomizer
 }
